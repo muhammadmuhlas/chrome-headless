@@ -1,4 +1,5 @@
 FROM debian:buster-slim
+
 LABEL name="chrome-headless" \
         maintainer="Muhammad Muhlas <muhammadmuhlas3@gmail.com>" \
         version="1.0"

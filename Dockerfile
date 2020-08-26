@@ -38,6 +38,6 @@ USER chrome
 EXPOSE 9222
 
 ENTRYPOINT ["/tini", "--", "google-chrome"]
-CMD ["--headless", "--no-sandbox", "--disable-setuid-sandbox", \
+CMD ["--headless", "--no-sandbox", "--disable-setuid-sandbox", "--disable-web-security", \
                 "--disable-dev-shm-usage", "--disable-gpu", "--remote-debugging-address=0.0.0.0", \
                 "--remote-debugging-port=9222" , "--disable-remote-fonts", "--user-data-dir=/tmp"]
